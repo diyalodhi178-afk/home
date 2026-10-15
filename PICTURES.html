@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PICTURES.css">
+    <link rel="stylesheet" href="HOME.css">
+    <link rel="stylesheet" href="ABOUT.css">
+    <link rel="stylesheet" href="CONTACT.css">
+    <title>Document</title>
+       <style>
+        header{
+            background-color: plum;
+            text-align: center;
+            font-size: 40px;
+            padding: 10px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        nav{
+            display:flex
+        }
+        name{
+            cursor: pointer;
+        }
+        main{
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+        footer{
+            background-color: plum;
+            text-align: left;
+            font-size: 20px;
+            padding: 20px;
+
+        }
+               * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f8f1;
+            color: #26382a;
+            line-height: 1.6;
+        }
+
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            background: linear-gradient(135deg, #1b5e20, #43a047, #81c784);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 19px;
+            font-style: italic;
+        }
+        
+         nav {
+            background: #173f1c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 45px;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #b9f6ca;
+            transform: scale(1.08);
+        }
+
+
+        .hero {
+            min-height: 430px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(20, 70, 30, 0.55),
+                    rgba(20, 70, 30, 0.55)
+                ),
+                url("image1/earth.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 25px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            background: white;
+            color: #1b5e20;
+            padding: 13px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .hero-button:hover {
+            background: #c8e6c9;
+            transform: translateY(-3px);
+        }
+        .intro {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+            padding: 65px 20px 35px;
+        }
+
+        .intro h2 {
+            color: #1b5e20;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #536457;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 20px 70px;
+        }
+
+        .content-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .content-title h2 {
+            font-size: 32px;
+            color: #1b5e20;
+        }
+
+        .content-title p {
+            color: #68776b;
+            margin-top: 8px;
+        }
+       .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+            transition: 0.35s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 22px;
+        }
+
+        .card h3 {
+            color: #1b5e20;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #68776b;
+            margin-bottom: 18px;
+        }
+
+        .card-button {
+            display: inline-block;
+            background: #2e7d32;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .card-button:hover {
+            background: #1b5e20;
+        }
+
+        .quote {
+            background: #dcedc8;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 20px;
+        }
+
+        .quote h2 {
+            color: #1b5e20;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .quote p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 19px;
+            font-style: italic;
+            color: #405344;
+        }
+
+        footer {
+            background: #173f1c;
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        footer h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: #c8e6c9;
+            margin-bottom: 20px;
+        }
+
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-button {
+            background: white;
+            color: #173f1c;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .footer-button:hover {
+            background: #a5d6a7;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 20px;
+            font-size: 14px;
+        }
+
+
+        @media (max-width: 900px) {
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h2 {
+                font-size: 40px;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            nav {
+                gap: 20px;
+                padding: 13px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 350px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .intro h2 {
+                font-size: 28px;
+            }
+
+            .footer-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+        </style>
+    
+</head>
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>🌍 THE BEAUTY OF EARTH</h1>
+
+        <p>
+            Discover • Explore • Appreciate • Protect
+        </p>
+
+    </header>
+
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="home2.html">HOME</a>
+
+        <a href="ABOUT.html">ABOUT</a>
+
+        <a href="CONTACT.html">CONTACT</a>
+
+    </nav>
+
+
+
+    
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>Our Beautiful Home</h2>
+<main>
+    <h2 style="text-align: center;"><span> NATURE</span></h2>
+    <nav>
+      <img src="https://i.pinimg.com/1200x/62/20/24/622024330c2f3ad4816786bae1787067.jpg" height="200" width="300">
+      <img src="https://i.pinimg.com/736x/1c/21/6a/1c216ac1685d1d8299c40803398ae52a.jpg" height="200" width="300">
+      <img src="https://i.pinimg.com/736x/26/84/33/268433a1abef86343eccbc36687eca20.jpg"height="200" width="300">
+    </nav>
+    <nav>
+      <img src="https://i.pinimg.com/736x/ab/72/39/ab7239fe50c926c61f44510839a120d6.jpg"height="200" width="300">
+      <img src="https://i.pinimg.com/1200x/44/36/c7/4436c7269d8cb7778dc5db6f8ba11562.jpg"height="200" width="300">
+      <img src="https://i.pinimg.com/736x/b7/15/98/b715984a3c94f3c9ed7da403aaf9a3bc.jpg"height="200" width="300">
+    </nav>
+    <nav>
+        <img src="https://i.pinimg.com/1200x/3a/66/76/3a6676f55483d33a3de68e262c4aab87.jpg"height="200" width="300">
+        <img src="https://i.pinimg.com/736x/73/a1/e0/73a1e0157d732ace9af34e0f8b7a282b.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/736x/ae/51/e3/ae51e31c321041cfb486d1ab8c047216.jpg" height="200" width="300">
+    </nav>
+    <nav>
+        <img src="https://i.pinimg.com/736x/32/3d/ed/323ded9d4dbb9dfa1160f10e025f5750.jpg"height="200" width="300" >
+        <img src="https://i.pinimg.com/1200x/e0/f4/08/e0f408437980097dbdba45e462537a90.jpg"height="200" width="300">
+        <img src="https://i.pinimg.com/736x/04/d3/2b/04d32bd32b69130405f2d983678c4bf6.jpg" height="200" width="300">
+    </nav>
+    <h2 style="text-align: center;"><span>ANIMALS</span></h2>
+    <nav>
+        <img src="https://i.pinimg.com/736x/eb/2f/6b/eb2f6be1e9d57d76cd9534c612fdc725.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/1200x/9e/95/e3/9e95e38052b193ac7b7a8aec0f934833.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/1200x/f7/4c/62/f74c62666378d1c558f0e762bd4d0335.jpg" height="200" width="300">
+    </nav>
+<nav>
+    <img src="https://i.pinimg.com/736x/1c/08/cc/1c08ccf31b8286a9b99243e848889c5e.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/57/14/7a/57147afd30daa97b2927787e63c26f77.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/736x/7f/74/89/7f74890b444d3661b10402a4ec426269.jpg" height="200" width="300">
+</nav>
+<nav>
+    <img src="https://i.pinimg.com/736x/f5/dc/de/f5dcde257dc627bfdb51acfed2d8b111.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/c1/0d/71/c10d7149a54d0c8680d41c44fcb38fbd.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/736x/fa/ec/4f/faec4ff6d332ef86e5caf3620507c8b4.jpg" height="200" width="300">
+</nav>
+    <h2 style="text-align: center;"><span>MOUNTAINS</span></h2>
+    <nav>
+        <img src="https://i.pinimg.com/1200x/c2/55/62/c255621f98dd5889e1f4768be5f9732e.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/1200x/47/00/a2/4700a2d0fd9901200112e546261ccfc4.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/1200x/30/ae/c4/30aec4d84905c439bf9c4d612423a1a4.jpg" height="200" width="300">
+    </nav>
+<nav>
+    <img src="https://i.pinimg.com/736x/dd/09/29/dd0929a04aa578cbeec0c92fc40f09c8.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/736x/fd/73/f0/fd73f046d74449331e70ac7531a752b7.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/47/da/2d/47da2d09a9bb2394dd764adc789ab193.jpg" height="200" width="300">
+</nav>
+<nav>
+    <img src="https://i.pinimg.com/736x/db/39/63/db396314d5cf3d953e1580464ee02d77.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/ad/e9/48/ade94889319475e835f26231f1e490dd.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/43/cc/b2/43ccb23684066feb3074167fea7e82d2.jpg" height="200" width="300">
+</nav>
+    <h2 style="text-align: center;"><span>SKIES</span></h2>
+    <nav>
+        <img src="https://i.pinimg.com/1200x/a9/17/3d/a9173d1d22635ef07087f49752391216.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/1200x/8c/d7/c5/8cd7c515961675b7b87628e8d2de2a5a.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/736x/c3/c7/71/c3c77155748f15ffee61cbc1fe9705d6.jpg" height="200" width="300">
+    </nav>
+<nav>
+    <img src="https://i.pinimg.com/1200x/ee/11/9f/ee119fb1bb7e26a0c9afba4fb370cdd6.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/61/9b/94/619b94c2fc04d9dd6d89dfcfe35101d0.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/17/4b/77/174b77c13dd4b36bc8376940135d280b.jpg" height="200" width="300">
+</nav>
+<nav>
+    <img src="https://i.pinimg.com/1200x/3c/cf/bb/3ccfbbec402dc800b354a9a28d5c9dd0.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/61/dd/b9/61ddb9113b939f153705f85bf3ac2a2c.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/736x/1c/46/16/1c46164ad64f15db6fa90fbcc93318a3.jpg" height="200" width="300">
+</nav>
+    <h2 style="text-align: center;"><span>BIRDS</span></h2>
+    <nav>
+        <img src="https://i.pinimg.com/1200x/63/d6/58/63d6585a4a72c31921926db7273e7491.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/1200x/46/68/8e/46688e5b9548bc19e70a3475f06df1f6.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/1200x/4a/be/4e/4abe4ef29bc860386798aa3630a9782c.jpg" height="200" width="300">
+    </nav>
+<nav>
+    <img src="https://i.pinimg.com/1200x/6a/15/46/6a154612f747aa4d56dafbac203e1f88.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/736x/84/a9/1d/84a91d2d6e9d5e1710e017619b8e2455.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/736x/d6/eb/2a/d6eb2a603b8f80460a851dc6cbb859fc.jpg" height="200" width="300">
+</nav>
+<nav>
+    <img src="https://i.pinimg.com/736x/97/f2/71/97f271353e63b58b178cc8d77d1b6c19.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/c3/d7/e7/c3d7e780d8ca5ba0be621578c49127f0.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/736x/d1/b1/89/d1b189a49a883c43e0a24d59a6f331ef.jpg" height="200" width="300">
+</nav>
+    <h2 style="text-align: center;"><span>VILLAGES</span></h2>
+    <nav>
+        <img src="https://i.pinimg.com/1200x/4a/02/a1/4a02a1e52de5ca1fba9c95a239fd0b79.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/736x/43/31/2b/43312bf39d2f6058899995e7614a2d54.jpg" height="200" width="300">
+        <img src="https://i.pinimg.com/736x/e8/87/14/e88714c72878bd2071b82adb0126dcf7.jpg" height="200" width="300">
+    </nav>
+<nav>
+    <img src="https://i.pinimg.com/1200x/ce/8b/e2/ce8be2f8195c938352bc53cabd3c6ea3.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/b5/08/31/b5083172c7071431f0205b20df905464.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/a6/72/4b/a6724bf29468c7938cc7ca60c50d9ec8.jpg" height="200" width="300">
+</nav>
+<nav>
+    <img src="https://i.pinimg.com/1200x/ac/42/0b/ac420b1f4da7c5563de1908debb75143.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/736x/b7/8a/de/b78adef14c124da458ad054b9c8b6ae1.jpg" height="200" width="300">
+    <img src="https://i.pinimg.com/1200x/19/78/a6/1978a67090e0be15405d3143e07d4f5c.jpg" height="200" width="300">
+</nav>
+
+
+
+    
+</main>
+<footer >
+    
+    
+
+        <h3>🌎 THE BEAUTY OF EARTH</h3>
+
+        <p>
+            Celebrating the beauty, diversity and wonder of our planet.
+        </p>
+
+
+        <div class="footer-buttons">
+
+            <a href="STORIES.html" class="footer-button">
+                ← PREVIOUS
+            </a>
+
+            <a href="BOOKS.html" class="footer-button">
+                NEXT →
+            </a>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 The Beauty of Earth | Created with ❤️ for Nature
+
+        </div>
+
+    
+    
+</footer>
+</body>
+</html>
